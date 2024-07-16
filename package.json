@@ -1,7 +1,12 @@
 {
-  "name": "linked-lists",
+  "name": "link-list",
   "version": "1.0.0",
-  "main": "index.js",
+  "exports": {
+    "link-list": {
+      "import": "./link-list.js"
+    }
+  },
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
