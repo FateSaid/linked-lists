@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { Node } from "./node.mjs";
 
 class LinkedList {
@@ -20,7 +21,7 @@ class LinkedList {
     const node = new Node(data);
     let head = this.head;
     if (head === null) {
-      this.prepend(data);
+      return this.prepend(data);
     }
     while (head.nextNode !== null) {
       head = head.nextNode;
@@ -100,10 +101,11 @@ class LinkedList {
 }
 const ll = new LinkedList();
 
-ll.prepend(10);
-ll.prepend(15);
-ll.prepend(20);
-ll.append(2);
+ll.append("dog");
+ll.append("cat");
+ll.append("parrot");
+ll.append("hamster");
+ll.append("snake");
+ll.append("turtle");
 
-console.log(ll);
 console.log(ll.toString());
